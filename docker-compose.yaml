@@ -12,7 +12,7 @@ services:
       - MYSQL_DATABASE=alumnos
     volumes:
       - mysql:/var/lib/mysql
-      - ./datos.sql:/docker-entrypoint-initdb.d/datos.sql
-      - ./mysql.cnf:/etc/mysql/conf.d/my.cnf
+      - docker/datos.sql:/docker-entrypoint-initdb.d/datos.sql
+      - docker/mysql.cnf:/etc/mysql/conf.d/my.cnf
 volumes:
   mysql:
