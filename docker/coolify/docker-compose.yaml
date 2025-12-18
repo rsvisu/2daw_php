@@ -1,6 +1,8 @@
 services:
   web:
-    build: docker/coolify/
+    build:
+      context: ../../
+      dockerfile: docker/coolify/Dockerfile
     ports:
       - 80:80
     hostname: web
