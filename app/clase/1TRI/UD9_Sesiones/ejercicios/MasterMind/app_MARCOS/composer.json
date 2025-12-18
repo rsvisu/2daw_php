@@ -1,0 +1,19 @@
+{
+  "name": "usuario/mastermind-examen",
+  "description": "Proyecto Mastermind para examen de entorno servidor.",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Tu Nombre",
+      "email": "tu.email@ejemplo.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "MasterBind\\": "src/"
+    }
+  },
+  "require": {
+    "vlucas/phpdotenv": "^5.6"
+  }
+}

@@ -1,0 +1,314 @@
+.contenedor {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+.jugar {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 60% 1 1;
+    justify-content: start;
+    align-content: center;
+    margin-right: 2%;
+    margin-left: 2%;
+
+}
+
+.jugadas {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 40% 1 1;
+    justify-content: space-between;
+    margin-left: 2%;
+    margin-right: 2%;
+
+}
+
+.jugada {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.jugadaNumero {
+    display: flex;
+    flex: content 0 0;
+    flex-flow: row nowrap;
+    flex: 10% 1 1;
+
+}
+
+.jugadaRedondeles {
+    display: flex;
+    flex-flow: row nowrap;
+    flex: 34% 0 0;
+
+}
+
+.jugadaColores {
+    display: flex;
+    flex-flow: row nowrap;
+    flex: content 0 3;
+
+}
+
+.opciones {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding: 10px;
+    background-color: #eee;
+    margin: 20px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #eee;
+    margin: 30px;
+    flex-wrap: nowrap;
+}
+
+.grupo_select {
+    display: flex;
+    flex-flow: row wrap;
+
+
+}
+
+
+fieldset {
+    border: 0.40em solid brown;
+    background-color: #eee;
+
+
+}
+
+h3 {
+    color: chocolate;
+}
+
+h3.titulo {
+    color: darkred;
+    text-decoration: underline red;
+    font-style: oblique;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+h3.titulo1 {
+    color: darkblue;
+    text-decoration: underline red;
+    font-style: oblique;
+    float: right;
+    margin-bottom: 10px;
+    margin-top: 1px;
+    font-size: 1.4em;
+}
+
+h2 {
+    color: blueviolet;
+}
+
+li {
+    color: darkgreen;
+}
+
+span.negro {
+    background: black;
+    border-radius: 3em;
+    -moz-border-radius: 3em;
+    -webkit-border-radius: 3em;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 1.5em;
+    margin-right: 15px;
+    text-align: center;
+    width: 1.5em;
+    height: 1.5em;
+    font-size: 1em;
+}
+
+span.blanco {
+    background: white;
+    border-radius: 3em;
+    -moz-border-radius: 3em;
+    -webkit-border-radius: 3em;
+    color: #000000;
+    font-weight: bold;
+    line-height: 1.5em;
+    margin-right: 15px;
+    text-align: center;
+    width: 1.5em;
+    height: 1.5em;
+    font-size: 1em;
+}
+
+#final {
+    border: 0.25em solid;
+    align-content: center;
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    margin-left: -115px;
+    margin-top: -80px;
+    padding: 10px;
+    background-color: #ccc;
+}
+
+#presentacion {
+    border: 0.25em solid;
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    padding: 10px;
+    background-color: buttonhighlight;
+    font-size: 1.4em;
+    font-weight: bold;
+    margin: 10px
+}
+
+
+
+.Color {
+    float: left;
+    display: inline;
+    width: 140px;
+    height: 40px;
+    margin: 5px;
+    color: black;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 1.3em
+}
+
+.Color_small {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    padding: 10px;
+    font-size: 1.3em;
+    text-align: center;
+    color: black
+}
+
+
+.Azul {
+    background-color: blue;
+    color: white;
+}
+
+.Rojo {
+    background-color: red;
+    color: white;
+}
+
+.Naranja {
+    background-color: orange;
+}
+
+.Verde {
+    background-color: green;
+    color: white;
+}
+
+.Violeta {
+    background-color: violet;
+}
+
+.Amarillo {
+    background-color: yellow;
+}
+
+.Marron {
+    background-color: brown;
+    color: white;
+}
+
+.Rosa {
+    background-color: pink;
+}
+
+
+
+
+input[type=submit] {
+    font-size: 1em;
+    padding: 5px 15px;
+    border-width: 2px;
+    background: #ccc;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 10px;
+
+}
+
+
+legend {
+    font-size: 1.2em;
+    color: green;
+    font-weight: bold;
+}
+/* Contenedor principal del encabezado */
+.header {
+    background-color: #f3f4f6;   /* gris claro */
+    padding: 10px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Título centrado y separado */
+.header .titulo {
+    flex: 1;
+    text-align: center;
+    color: #065f46;              /* verde oscuro */
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Zona de usuario y logout */
+.logout-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Texto del usuario */
+.usuario {
+    font-size: 12px;
+    font-weight: bold;
+    color: #047857;
+    padding: 4px 8px;
+}
+
+/* Botón de Logout */
+.logout-btn {
+    padding: 4px 12px;
+    font-size: 14px;
+    background-color: #fbbf24;     /* amarillo estilo "warning" */
+    border: 1px solid #d97706;
+    color: #000;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.logout-btn:hover {
+    background-color: #f59e0b;
+}
+
+/* Separador grueso */
+.separador {
+    width: 100%;
+    height: 8px;
+    border: none;
+    background-color: #dc2626;  /* rojo */
+    margin: 20px 0;
+}

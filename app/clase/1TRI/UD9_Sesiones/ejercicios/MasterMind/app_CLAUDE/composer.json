@@ -1,0 +1,15 @@
+{
+    "name": "robert/app",
+    "autoload": {
+        "psr-4": {
+            "MasterBind\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Robert",
+            "email": "robert.sebastian.visu@gmail.com"
+        }
+    ],
+    "require": {}
+}

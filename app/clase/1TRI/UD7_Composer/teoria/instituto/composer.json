@@ -1,0 +1,17 @@
+{
+    "name": "robert/instituto",
+    "autoload": {
+        "psr-4": {
+            "Controladores\\": "./Class"
+        }
+    },
+    "authors": [
+        {
+            "name": "Robert",
+            "email": "robertvisu@gmail.com"
+        }
+    ],
+    "require": {
+        "fakerphp/faker": "^1.24"
+    }
+}

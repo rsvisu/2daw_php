@@ -1,0 +1,9 @@
+services:
+  web:
+    build: web
+    ports:
+      - 8100:80
+    volumes:
+      - ./../app:/var/www/html
+    hostname: web
+    container_name: web
