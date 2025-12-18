@@ -1,6 +1,6 @@
 services:
   web:
-    build: /coolify/.
+    build: /coolify
     ports:
       - 80:80
     hostname: web
