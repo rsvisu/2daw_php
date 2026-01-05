@@ -1,0 +1,20 @@
+on: push
+name: Deploy Website On Push
+jobs:
+  web-deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get Latest Code
+        uses: actions/checkout@v4
+
+      - name: Sync Files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
+        with:
+          server: ftpupload.net
+          username: ${{ secrets.ftp_username }}
+          password: ${{ secrets.ftp_password }}
+          protocol: ftp
+          port: 21
+          local-dir: ./app/
+          server-dir: ./php2daw.page.gd/htdocs/
