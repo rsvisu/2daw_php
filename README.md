@@ -46,9 +46,12 @@ También he añadido `workflow_dispatch` para poder lanzarla manualmente desde l
 
 **b) El trabajo (`jobs`)**
 ```yaml
-runs-on: ubuntu-latest
+jobs:
+  web-deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
 ```
-La acción se ejecuta en una máquina virtual de Linux que nos presta GitHub.
+Aqui definimos los trabajos que se van a ejecutar, con sus pasos y el tipo de máquina virtual donde lo va a hacer. En este caso es un Ubuntu.
 
 **c) Los pasos (`steps`)**
 ```yaml
@@ -75,13 +78,14 @@ steps:
 
 El trabajo tiene solo dos pasos:
 
-1. **Get Latest Code:**
+1. **Get Latest Code:**  
 Lo primero que hace la máquina virtual es descargarse mi código del repositorio. Si no hace esto, no tiene archivos que subir.
 
-3. **Sync Files:**
+3. **Sync Files:**  
 Aquí es donde uso la action de terceros. Le paso mis credenciales para que se conecte y suba los archivos.
 
-**Secrets:** IMPORTANTE. No he puesto mi contraseña en el código. Uso `${{ secrets.ftp_password }}` que lee las variables ocultas que he configurado en los ajustes del repositorio.
+**Secrets:** No he puesto mi contraseña en el código. Uso `${{ secrets.ftp_password }}` que lee las variables ocultas que he configurado en los ajustes del repositorio.  
+
 **Directorios:** Le indico que coja los archivos de la carpeta app (`./app/`) y los suba en la carpeta pública del servidor del dominio php2daw (`/php2daw.page.gd/htdocs/`).
 
 ### 4. Modificaciones y optimización.
@@ -100,7 +104,15 @@ exclude: |
 
 ```
 
-Le dice a la action que suba mis ejercicios, pero que ignore la carpeta vendor y la carpeta .git**. Esto hace que el tiempo de ejeccucion del workflow baje mucho pero como consecuencia los ejercicios que usan Composer no van en la web.
+Le dice a la action que suba mis ejercicios, pero que ignore la carpeta `vendor` y la carpeta `.git**`. Esto hace que el tiempo de ejeccucion del workflow baje mucho pero como consecuencia los ejercicios que usan Composer no van en la web.
+
+Ademas para el listado de archivos he añadido un archivo .htaccess manualmente en la carpeta previa a la publica (`/php2daw.page.gd/.htaccess`) donde he configurado estas directivas:
+```apache
+Options +Indexes
+IndexIgnore .ftp-deploy-sync-state.json favicon.ico
+```
+
+El `IndexIgnore` es para ocultar el archivo del favicon del listado y un archivo especial que crea la Action del FTP para llevar el registro de los archivos subidos.
 
 ### 5. Ejecución y evidencias.
 
