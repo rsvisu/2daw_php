@@ -18,3 +18,8 @@ jobs:
           port: 21
           local-dir: ./app/
           server-dir: ./php2daw.page.gd/htdocs/
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/vendor
+            **/vendor/**
