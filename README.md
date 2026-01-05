@@ -106,7 +106,7 @@ exclude: |
 
 Le dice a la action que suba mis ejercicios, pero que ignore la carpeta `vendor` y la carpeta `.git**`. Esto hace que el tiempo de ejeccucion del workflow baje mucho pero como consecuencia los ejercicios que usan Composer no van en la web.
 
-Ademas para el listado de archivos he añadido un archivo .htaccess manualmente en la carpeta previa a la publica (`/php2daw.page.gd/.htaccess`) donde he configurado estas directivas:
+Ademas para el listado de archivos he añadido un archivo .htaccess manualmente en la carpeta previa a la publica del servidor (`/php2daw.page.gd/.htaccess`) donde he configurado estas directivas:
 ```apache
 Options +Indexes
 IndexIgnore .ftp-deploy-sync-state.json favicon.ico
