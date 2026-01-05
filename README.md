@@ -49,25 +49,25 @@ La acción se ejecuta en una máquina virtual de Linux que nos presta GitHub.
 
 **c) Los pasos (`steps`)**
 ```yaml
-    steps:
-      - name: Get Latest Code
-        uses: actions/checkout@v4
+steps:
+  - name: Get Latest Code
+    uses: actions/checkout@v4
 
-      - name: Sync Files
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
-        with:
-          server: ftpupload.net
-          username: ${{ secrets.ftp_username }}
-          password: ${{ secrets.ftp_password }}
-          protocol: ftp
-          port: 21
-          local-dir: ./app/
-          server-dir: ./php2daw.page.gd/htdocs/
-          exclude: |
-            **/.git*
-            **/.git*/**
-            **/vendor
-            **/vendor/**
+  - name: Sync Files
+    uses: SamKirkland/FTP-Deploy-Action@v4.3.6
+    with:
+      server: ftpupload.net
+      username: ${{ secrets.ftp_username }}
+      password: ${{ secrets.ftp_password }}
+      protocol: ftp
+      port: 21
+      local-dir: ./app/
+      server-dir: ./php2daw.page.gd/htdocs/
+      exclude: |
+        **/.git*
+        **/.git*/**
+        **/vendor
+        **/vendor/**
 ```
 
 El trabajo tiene solo dos pasos:
