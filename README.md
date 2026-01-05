@@ -27,7 +27,7 @@ Como uso **InfinityFree** (un hosting gratuito), no tengo acceso SSH ni herramie
 
 ### 2. Ubicación del workflow.
 
-El archivo de configuración se encuentra en la ruta estándar que **especifica GitHub** para la ubicación de los workflows:
+El archivo de configuración se encuentra en la ruta estándar que **especifica GitHub** para la ubicación de los workflows:  
 `./.github/workflows//ftp_deploy.yaml`
 
 ### 3. Explicación paso a paso del código.
