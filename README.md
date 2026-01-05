@@ -19,10 +19,10 @@ He implementado un sistema para que, cada vez que suba un ejercicio nuevo al rep
 
 He utilizado la action **[FTP-Deploy-Action](https://github.com/marketplace/actions/ftp-deploy)** creada por *SamKirkland*.
 
-**¿Qué problema resuelve?** 
+**¿Qué problema resuelve?**  
 Automatiza la subida de archivos vía FTP. Yo lo he usado para tener una página web actualizada automáticamente al día con el repositorio donde cualquiera puede visualizar y ejecutar los ejercicios.
 
-**¿Por qué esta action?** 
+**¿Por qué esta action?**  
 Como uso **InfinityFree** (un hosting gratuito), no tengo acceso SSH ni herramientas avanzadas de despliegue. Solo tengo acceso FTP. Esta Action es la más popular y sencilla para conectar GitHub con un servidor FTP estándar.
 
 ### 2. Ubicación del workflow.
