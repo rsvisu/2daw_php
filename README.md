@@ -11,7 +11,7 @@ https://php2daw.page.gd/
 
 ### Despliegue automatico a InfinityFree:
 
-> Esta explicación es debido a una tarea de la asignatura de **despliegue de aplicaciones web** sobre el análisis de GitHub Actions, donde he elegido la de _explicacion de un action de un tercero_.
+> Esta explicación es debido a una tarea de la asignatura de **despliegue de aplicaciones web** sobre el análisis de GitHub Actions, donde he elegido la opcion de "_explicacion de un action de un tercero_".
 
 He implementado un sistema para que, cada vez que suba un ejercicio nuevo al repositorio, se publique automáticamente en mi hosting gratuito (InfinityFree).
 
