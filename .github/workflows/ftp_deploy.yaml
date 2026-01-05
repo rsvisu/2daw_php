@@ -1,5 +1,7 @@
-on: push
-name: Deploy Website On Push
+on:
+  push:
+  workflow_dispatch:
+name: Deploy Website To InfinityFree
 jobs:
   web-deploy:
     name: Deploy
