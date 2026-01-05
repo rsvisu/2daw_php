@@ -29,8 +29,6 @@ El archivo de configuración se encuentra en la ruta estándar que **especifica 
 
 ### 3. Explicación paso a paso del código
 
-Aquí explico qué hace cada parte de mi archivo YAML:
-
 **a) Disparador (`on`)**
 
 ```yaml
