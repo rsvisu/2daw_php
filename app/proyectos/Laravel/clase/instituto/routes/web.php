@@ -1,7 +1,7 @@
 <?php
 
-use App\Http\Controllers\AlumnoController;
-use App\Http\Controllers\MainController;
+use instituto_juan\app\Http\Controllers\AlumnoController;
+use instituto_juan\app\Http\Controllers\MainController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
