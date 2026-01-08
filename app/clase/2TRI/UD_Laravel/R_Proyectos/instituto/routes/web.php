@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AlumnoController;
 use App\Http\Controllers\MainController;
 use Illuminate\Support\Facades\Route;
 
@@ -22,3 +23,11 @@ Route::fallback(function () {
     $ruta = request()->path();
     return "<h1>La ruta '$ruta' no existe!</h1>";
 });
+
+// Clase 19/12/2025
+Route::get("alumnos/{id}/{nombre}", function ($cod, $nombre){
+    return "El alumno con id $cod y nombre $nombre";
+})->where("id", "[0-9]+");
+
+Route::view("about", "about")->name("about");
+Route::view("noticias", "noticias")->name("noticias");
