@@ -1,9 +1,7 @@
 # Ejercicios PHP de 2DAW
 
-La carpeta app contiene el codigo fuente de todos los ejercicios, además de la teoria correspondiente en markdown.  
-
-Se pueden visualizar estos ejercicios en acción en el siguiente enlace (menos los que dependen de Composer y de una DB):  
-https://php2daw.page.gd/
+La carpeta [`/app`](https://github.com/rsvisu/2daw_php/tree/main/app) contiene el codigo fuente de todos los ejercicios, además de la teoria correspondiente en markdown. Estos se pueden visualizar online en el siguiente enlace (menos los ejercicios que dependen de Composer o de una DB):  
+> https://php2daw.page.gd/
 
 ---
 
